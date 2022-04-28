@@ -38,7 +38,9 @@ body {
 
 body {
   font-family: Montserrat;
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 14px;
+  color: #252B42;
 }
 
 main {
@@ -54,6 +56,98 @@ main {
 
 ._container {
   max-width: 1046px;
+  padding: 0px 15px;
   margin: 0px auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 104px;
+}
+
+@media (max-width: 479px) {
+  .header__container {
+    min-height: 70px;
+  }
+}
+
+.header__logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.1px;
+  color: inherit;
+}
+
+.menu {
+  padding: 5px 0px;
+}
+
+.header__menu {
+  margin-left: 133px;
+}
+
+@media (max-width: 992px) {
+  .header__menu {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__menu {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 479px) {
+  .header__menu {
+    margin-left: 20px;
+  }
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu__item {
+  margin-right: 21px;
+}
+
+.menu__item:last-child {
+  margin-right: 0px;
+}
+
+.menu__link {
+  font-weight: 600;
+  line-height: 1.71;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+@media (max-width: 479px) {
+  .menu__link {
+    font-size: 18px;
+    line-height: 1.81;
+  }
 }
 /*# sourceMappingURL=main.css.map */
