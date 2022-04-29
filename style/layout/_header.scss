@@ -69,6 +69,11 @@
     text-align: center;
     letter-spacing: 0.2px;
     color: #737373;
+    transition: color 0.4s ease 0s;
+    &:hover,
+    &:focus {
+        color: #FF7B47;
+    }
     @media (max-width: 479px) {
         & {
             font-size: 18px;
