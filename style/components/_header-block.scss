@@ -1,0 +1,23 @@
+.header-block{
+text-align: center;
+line-height: 1.42;
+letter-spacing: 0.2px;
+}
+.header-block__title{
+    font-weight: 700;
+    font-size: 40px; 
+    &:not(:last-child){
+        margin-bottom: 10px;
+    }
+    @media (max-width: 992px) {
+        & {
+            font-size: 30px;
+    
+        }
+    
+    }
+}
+.header-block__text{
+    color: #737373;
+
+}
