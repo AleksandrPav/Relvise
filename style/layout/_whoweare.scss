@@ -1,5 +1,6 @@
-.page__whoweare{
 
+.page__whoweare{
+    background-color: #ffffff;
 }
 .whoweare{
     padding: 80px 0px 130px 0px;
@@ -10,9 +11,7 @@
     }
 
 }
-.whoweare__container{
 
-}
 .whoweare__header{
     margin: 0px 0px 100px 0px;
     @media (max-width: 950px) {
@@ -45,6 +44,11 @@
         object-fit: cover;
 
     }
+         @media (max-width: 950px) {
+             & {
+                padding-bottom: 56.25%;
+             }
+         }
 
 }
 .whoweare__content{
@@ -55,11 +59,7 @@
             padding:0px 0px 0px 50px;
         }
     }
-    @media (max-width: 992px) {
-        & {
-            padding: 0px 0px 0px 0px;
-        }
-    }
+  
 
 }
 .whoweare__title{
@@ -91,9 +91,7 @@
     }
 
 }
-.whoweare__items{   
 
-}
 .whoweare__item{
     &:not(:last-child) {
         margin-bottom: 30px;
